@@ -1,0 +1,324 @@
+EXE a
+tip A pentru gazda: single-v4.protocoale.xyz
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 27246
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; ANSWER SECTION:
+single-v4.protocoale.xyz. 300	IN	A	127.0.0.1
+
+tip A pentru gazda: single.protocoale.xyz
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15234
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; ANSWER SECTION:
+single.protocoale.xyz.	300	IN	A	127.0.0.1
+
+tip A pentru gazda: multi-v4.protocoale.xyz
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 58412
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; ANSWER SECTION:
+multi-v4.protocoale.xyz. 300	IN	A	127.2.2.2
+multi-v4.protocoale.xyz. 300	IN	A	127.3.3.3
+multi-v4.protocoale.xyz. 300	IN	A	127.1.1.1
+multi-v4.protocoale.xyz. 300	IN	A	127.4.4.4
+
+tip A pentru gazda: multi.protocoale.xyz
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 60795
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; ANSWER SECTION:
+multi.protocoale.xyz.	300	IN	A	127.4.4.4
+multi.protocoale.xyz.	300	IN	A	127.3.3.3
+multi.protocoale.xyz.	300	IN	A	127.1.1.1
+multi.protocoale.xyz.	300	IN	A	127.2.2.2
+
+
+tip A pentru gazda: protocoale.protocoale.xyz
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 53228
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; ANSWER SECTION:
+protocoale.protocoale.xyz. 300	IN	A	127.42.42.42
+
+
+
+EXE b
+--------------------
+tip AAAA pentru gazda: single-v6.protocoale.xyz
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52857
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; ANSWER SECTION:
+single-v6.protocoale.xyz. 64	IN	AAAA	::1
+
+tip AAAA pentru gazda: single.protocoale.xyz
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23195
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; ANSWER SECTION:
+single.protocoale.xyz.	300	IN	AAAA	::1
+
+tip AAAA pentru gazda: multi-v6.protocoale.xyz
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 56285
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; ANSWER SECTION:
+multi-v6.protocoale.xyz. 300	IN	AAAA	::4
+multi-v6.protocoale.xyz. 300	IN	AAAA	::2
+multi-v6.protocoale.xyz. 300	IN	AAAA	::3
+multi-v6.protocoale.xyz. 300	IN	AAAA	::1
+
+tip AAAA pentru gazda: multi.protocoale.xyz
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 39038
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; ANSWER SECTION:
+multi.protocoale.xyz.	300	IN	AAAA	::2
+multi.protocoale.xyz.	300	IN	AAAA	::1
+multi.protocoale.xyz.	300	IN	AAAA	::4
+multi.protocoale.xyz.	300	IN	AAAA	::3
+
+EXE c
+--------------------
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 12865
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; ANSWER SECTION:
+protocoale.xyz.		300	IN	MX	20 alt2.gmail-smtp-in.l.google.com.
+protocoale.xyz.		300	IN	MX	30 alt3.gmail-smtp-in.l.google.com.
+protocoale.xyz.		300	IN	MX	10 alt1.gmail-smtp-in.l.google.com.
+
+EXE D
+--------------------
+RR autoritare: single-v4.protocoale.xyz
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+.			518400	IN	NS	h.root-servers.net.
+.			518400	IN	NS	i.root-servers.net.
+.			518400	IN	NS	j.root-servers.net.
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+.			518400	IN	NS	b.root-servers.net.
+.			518400	IN	NS	c.root-servers.net.
+RR autoritare: single.protocoale.xyz
+.			518400	IN	NS	i.root-servers.net.
+.			518400	IN	NS	j.root-servers.net.
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+.			518400	IN	NS	b.root-servers.net.
+.			518400	IN	NS	c.root-servers.net.
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+.			518400	IN	NS	h.root-servers.net.
+RR autoritare: multi-v4.protocoale.xyz
+.			518400	IN	NS	c.root-servers.net.
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+.			518400	IN	NS	h.root-servers.net.
+.			518400	IN	NS	i.root-servers.net.
+.			518400	IN	NS	j.root-servers.net.
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+.			518400	IN	NS	b.root-servers.net.
+RR autoritare: multi.protocoale.xyz
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+.			518400	IN	NS	b.root-servers.net.
+.			518400	IN	NS	c.root-servers.net.
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+.			518400	IN	NS	h.root-servers.net.
+.			518400	IN	NS	i.root-servers.net.
+.			518400	IN	NS	j.root-servers.net.
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+RR autoritare: protocoale.protocoale.xyz
+.			518400	IN	NS	b.root-servers.net.
+.			518400	IN	NS	c.root-servers.net.
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+.			518400	IN	NS	h.root-servers.net.
+.			518400	IN	NS	i.root-servers.net.
+.			518400	IN	NS	j.root-servers.net.
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+RR autoritare: multi-v6.protocoale.xyz
+.			518400	IN	NS	j.root-servers.net.
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+.			518400	IN	NS	b.root-servers.net.
+.			518400	IN	NS	c.root-servers.net.
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+.			518400	IN	NS	h.root-servers.net.
+.			518400	IN	NS	i.root-servers.net.
+RR autoritare: single-v6.protocoale.xyz
+.			518400	IN	NS	j.root-servers.net.
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+.			518400	IN	NS	b.root-servers.net.
+.			518400	IN	NS	c.root-servers.net.
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+.			518400	IN	NS	h.root-servers.net.
+.			518400	IN	NS	i.root-servers.net.
+RR autoritare: pc.protocoale.xyz
+.			518400	IN	NS	h.root-servers.net.
+.			518400	IN	NS	i.root-servers.net.
+.			518400	IN	NS	j.root-servers.net.
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+.			518400	IN	NS	b.root-servers.net.
+.			518400	IN	NS	c.root-servers.net.
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+RR autoritare: pcom.protocoale.xyz
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+.			518400	IN	NS	b.root-servers.net.
+.			518400	IN	NS	c.root-servers.net.
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+.			518400	IN	NS	h.root-servers.net.
+.			518400	IN	NS	i.root-servers.net.
+.			518400	IN	NS	j.root-servers.net.
+RR autoritare: protocoale.protocoale.xyz
+.			518400	IN	NS	i.root-servers.net.
+.			518400	IN	NS	j.root-servers.net.
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+.			518400	IN	NS	b.root-servers.net.
+.			518400	IN	NS	c.root-servers.net.
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+.			518400	IN	NS	h.root-servers.net.
+RR autoritare: protocoale.xyz
+.			518400	IN	NS	c.root-servers.net.
+.			518400	IN	NS	d.root-servers.net.
+.			518400	IN	NS	e.root-servers.net.
+.			518400	IN	NS	f.root-servers.net.
+.			518400	IN	NS	g.root-servers.net.
+.			518400	IN	NS	h.root-servers.net.
+.			518400	IN	NS	i.root-servers.net.
+.			518400	IN	NS	j.root-servers.net.
+.			518400	IN	NS	k.root-servers.net.
+.			518400	IN	NS	l.root-servers.net.
+.			518400	IN	NS	m.root-servers.net.
+.			518400	IN	NS	a.root-servers.net.
+.			518400	IN	NS	b.root-servers.net.
+EXE E
+--------------------
+google.com cu NS: 216.173.178.83
+google.com cu NS: 176.104.1.164
+216.58.215.110
+google.com cu NS: 80.50.136.166
+216.58.207.46
+google.com cu NS: 216.12.254.250
+172.217.9.46
+google.com cu NS: 69.38.129.86
+172.217.10.78
+Se obitin adrese diferite datorita structurii ierarhice
+, avem mai multe servere secundare care primesc date de la serverul primar
+EXE F
+--------------------
+127.0.0.1
+127.0.0.1
+127.42.0.0
+127.1.1.1
+127.2.2.2
+127.3.3.3
+127.4.4.4
+127.1.1.1
+127.4.4.4
+127.2.2.2
+127.3.3.3
+pcom.protocoale.xyz.
+protocoale.protocoale.xyz.
+127.42.42.42
+protocoale.protocoale.xyz.
+127.42.42.42
+127.42.42.42
+EXE G
+--------------------
+protocoale.xyz.		3600	IN	NS	ns1bcp.name.com.
+protocoale.xyz.		3600	IN	NS	ns2dqr.name.com.
+ protocoale.xyz.		3600	IN	NS	ns3hjx.name.com.
+protocoale.xyz.		3600	IN	NS	ns4lrt.name.com.
+test.dorinel.protocoale.xyz. 300 IN	A	127.0.0.42
+test.dorinel.protocoale.xyz. 300 IN	A	127.0.42.0
+Cerinta H
+--------------------
+; <<>> DiG 9.11.3-1ubuntu1.11-Ubuntu <<>> -x185.60.216.35 +noall +answer
+;; global options: +cmd
+35.216.60.185.in-addr.arpa. 588	IN	PTR	edge-star-mini-shv-01-frx5.facebook.com.
+Afisare inversa deoarece conform nivelului 3 adresa ni se asocieaza pe baza unei masti
+, iar noi vrem sa delegam IP-urile dupa inceput nu dupa sfarsit
